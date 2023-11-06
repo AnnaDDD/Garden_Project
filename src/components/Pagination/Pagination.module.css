@@ -1,0 +1,42 @@
+.pages_list {
+	margin: 40px auto 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px
+}
+
+.page_item {
+	flex-shrink: 0;
+}
+
+.num_btn {
+	position: relative;
+	width: 40px;
+	height: 40px;
+
+	line-height: 40px;
+	text-align: center;
+
+	border: 1px solid #a7a7a7;
+	background-color: #f1fff1;
+	color: #000;
+	border-radius: 50%;
+
+	cursor: pointer;
+	transition: color .4s ease;
+}
+
+.num_btn.active {
+	color: #ff32a1
+}
+
+@media (min-width: 762px) {
+	.num_btn:hover {
+		color: #339933
+	}
+
+	.num_btn:active {
+		top: 1px;
+	}
+}

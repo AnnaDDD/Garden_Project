@@ -1,0 +1,141 @@
+.headerMain {
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.busket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.counter {
+    background: #339933;
+    color: white;
+    border-radius: 50%;
+    padding: 1px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.headerList {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 173px;
+}
+
+.headerList li {
+    margin-right: 70px;
+    font-size: 16px;
+}
+
+.active {
+    color: #339933;
+}
+
+.headerList li a:hover{
+    color: #339933;
+}
+
+.headerList li a:active {
+    color: #339933;
+}
+
+.grnButton {
+    background-color: #339933;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo {
+    margin-right: 60px;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.headerListWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.cart_total {
+	position: absolute;
+	bottom: -30%;
+	right: -30%;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	width: 22px;
+	height: 22px;
+
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 50%;
+	color: #339933;
+	transition: border-color .4s ease;
+}
+
+.busket svg{
+    transition: fill .4s ease;
+}
+.busket:hover svg{
+fill:#339933;
+
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1023px) {
+    .headerList {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .headerMain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        backdrop-filter: blur(20px);
+        z-index: 100;
+    }
+
+    .headerList {
+        display: none;
+    }
+
+    .headerMain {
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .headerListWrapper {
+        padding-right: 20px;
+    }
+}

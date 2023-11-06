@@ -1,0 +1,65 @@
+.head {
+	background-color: #a1e2eb;
+	background-image: url("../../../public/images/garden.png");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;
+	position: relative;
+}
+
+.head_content {
+	min-height: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+}
+
+.head_title {
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 80px;
+	color: #fff
+}
+
+.head_title span {
+	display: block;
+	font-size: 63px;
+}
+
+.head_link {
+	width: 155px;
+	height: 80px;
+	margin-top: 60px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	word-wrap: 700px;
+	font-size: 25px;
+
+	border-radius: 13px;
+
+	background-color: #fff;
+	color: #000;
+}
+
+@media (max-width: 1100px) {
+	.head {
+		background: #a1e2eb;
+	}
+
+	.head_content {
+		justify-content: center;
+	}
+
+	.head_inner {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.head_link {
+		margin: 60px auto 0;
+	}
+}

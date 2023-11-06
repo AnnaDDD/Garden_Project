@@ -1,0 +1,142 @@
+.wrapper {
+    background: linear-gradient(223deg, #393 0%, #006300 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 45px 0; */
+    padding-top: 45px;
+	gap: 250px;
+}
+
+.textWrapper {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 46px;
+}
+
+.bigtextWrapper{
+    font-size: 90px;
+}
+
+.imageWrapper img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.inputWrapper {
+    margin-bottom: 30px;
+}
+
+.input {
+    border: none;
+    border-radius: 25px;
+    background: #FFF;
+    padding: 27px 50px;
+    padding-right: 0;
+    color: #6C6C6C;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formButton {
+    min-width: 33%;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 10%;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    color: white;
+}
+
+.messageError {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: yellow;
+}
+
+/* 
+.order {
+	flex-shrink: 0;
+	height: 392px; 
+	padding: 25px;
+	border: 3px solid #000;
+	border-radius: 21px;
+} */
+
+
+.error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    z-index: 10;
+    transform: translateY(-100%);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(240, 0, 0);
+    opacity: 0;
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+
+.error.active {
+	/* transform: translateY(0); */
+	opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .textWrapper {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .bigtextWrapper{
+        font-size: 50px;
+    }
+
+    .input {
+        padding: 20px 30px;
+        font-size: 14px;
+    }
+
+    .formButton {
+        font-size: 20px;
+        padding: 15px 10%;
+    }
+
+    .wrapper img {
+        display: none;
+    }
+}
