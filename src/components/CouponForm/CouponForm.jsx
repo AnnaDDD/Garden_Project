@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { Input } from "../UI/Input/Input";
 import { Button } from "../UI/Button/Button";
+import { fetchGetCoupon } from "../../asyncActions/order";
 
 function CouponForm() {
   // const [phoneNumber, setPhoneNumber] = useState('');
@@ -23,6 +24,7 @@ function CouponForm() {
 
   const onSubmit = (data) => {
     // console.log(data);
+    fetchGetCoupon('sale');
     setShowMessage(true);
   };
 

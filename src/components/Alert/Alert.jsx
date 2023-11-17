@@ -5,7 +5,7 @@ import styles from './Alert.module.css';
 
 const Alert = forwardRef(({showMessage, setShowMessage, cleanCart, context}, ref) => {
 
-    console.log(showMessage);
+    // console.log(showMessage);
     useEffect(() => {
         //  if (context === "coupon"){
         //   const verticalScrollPosition = window.scrollY;
