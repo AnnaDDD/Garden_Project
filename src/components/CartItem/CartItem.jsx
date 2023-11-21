@@ -9,8 +9,10 @@ import { addProductToCart, decrementProductInCart, removeProductFromCartById } f
 import { ProductPrice } from '../ProductPrice/ProductPrice';
 
 export const CartItem = (props) => {
+
 	const { id, image, title, price, discont_price, amount } = props;
 	const dispatch = useDispatch();
+	
 	return (
 		<li className={styles.cart_item}>
 			<IoMdClose

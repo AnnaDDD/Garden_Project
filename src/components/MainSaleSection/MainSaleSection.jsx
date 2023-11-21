@@ -1,30 +1,3 @@
-// import React, { useEffect } from 'react'
-// import { useDispatch, useSelector } from 'react-redux';
-// import ProductsList from '../ProductsList/ProductsList';
-// import { fetchSaleProductsList } from '../../asyncActions/products';
-
-// function MainSaleSection() {
-
-//   // const dispatch = useDispatch();
-
-// 	// useEffect(() => dispatch(fetchSaleProductsList()), [dispatch]);
-
-// 	// const products = useSelector((store) => store.products);
- 
-
-// 	// const targetProducts = products?.productsList.slice(0, 4);
-//   // console.log(targetProducts);
-//   return (
-   
-//     <div></div>
-//     // <div><ProductsList products={targetProducts}/></div>
-//   )
-// }
-
-// export default MainSaleSection
-
-
-
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllProductsList } from './../../asyncActions/products';

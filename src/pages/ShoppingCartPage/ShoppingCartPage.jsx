@@ -7,7 +7,9 @@ import { CartList } from '../../components/CartList/CartList';
 import Order from '../../components/Order/Order';
 
 function ShoppingCartPage() {
+	
 	const totalSumm = useSelector((store) => store.cart.totalSumm);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);

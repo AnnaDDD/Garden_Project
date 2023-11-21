@@ -93,21 +93,23 @@
 }
 
 .button.coupon{
-min-width: 33%;
-margin-top: 30px;
-border-radius: 25px;
-border: 2px solid #FFF;
-background: transparent;
-color: #FFF;
-font-family: Montserrat;
-font-size: 28px;
-font-weight: 700;
-padding: 20px 10%;
-margin-bottom: 45px;
-cursor: pointer;
+	min-width: 33%;
+	margin-top: 30px;
+	border-radius: 25px;
+	border: 2px solid #FFF;
+	background: transparent;
+	color: #FFF;
+	font-family: Montserrat;
+	font-size: 28px;
+	font-weight: 700;
+	padding: 20px 10%;
+	margin-bottom: 45px;
+	cursor: pointer;
 }
 
 @media (min-width: 762px) {
+
+
 	.button:focus {
 		border-color: #000;
 		background-color: #339933;
@@ -153,6 +155,12 @@ cursor: pointer;
 @media (max-width: 762px) {
 	.button.sale_ofer {
 		max-width: 100%;
+	}
+	.button.sale,
+	.button.order {
+		display: flex;
+		justify-content: center;
+		padding: 20px 80px;
 	}
 
 	.button.product_cart:hover {

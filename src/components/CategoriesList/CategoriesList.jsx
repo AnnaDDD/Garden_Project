@@ -5,6 +5,7 @@ import styles from './CategoriesList.module.css';
 import { CategoryItem } from '../CategoryItem/CategoryItem';
 
 export const CategoriesList = ({ listLength = 8 }) => {
+	
 	const dispatch = useDispatch();
 
 	useEffect(() => dispatch(fetchCategoriesList()), [dispatch]);

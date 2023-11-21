@@ -14,6 +14,7 @@ function ProductsListPage() {
 	const dispatch = useDispatch();
 
 	const pageTitle = useSelector((store) => store.products.pageTitle);
+	
 	const productsList = useSelector(
 		(store) => store.products.productslist
 	).filter((product) => product.rangeVisible && product.discontVisible);

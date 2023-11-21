@@ -1,26 +1,11 @@
-// import React from 'react'
-
-// function ProductsList({products}) {
-
-
-//   return (
-//     <ul>
-//         {products.map((product) => <li key={product.id}>{product.title}</li>)}
-//     </ul>
-//   )
-// }
-
-// export default ProductsList
-
-
 import { useEffect, useState } from 'react';
 import styles from './ProductsList.module.css';
 import { Pagination } from '../Pagination/Pagination';
 import ProductItem from '../ProductItem/ProductItem';
 
 
-
 function ProductsList({ products }) {
+	
 	const [currentPage, setCurrentPage] = useState(1);
 	const quantity = 8;
 

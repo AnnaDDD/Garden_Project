@@ -3,6 +3,7 @@ import styles from './CartList.module.css';
 import { CartItem } from '../CartItem/CartItem';
 
 export const CartList = () => {
+	
 	const cartList = useSelector((store) => store.cart.cartList);
 
 	return (

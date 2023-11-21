@@ -5,7 +5,6 @@
 	justify-content: flex-start;
 	align-items: stretch;
 	gap: 28px;
-
 	border-bottom: 1px solid #a7a7a7;
 }
 
@@ -15,7 +14,6 @@
 	right: 0;
 	width: 30px;
 	height: 30px;
-
 	line-height: 10px;
 	color: #a7a7a7;
 	cursor: pointer;
@@ -58,11 +56,9 @@
 	padding: 10px 12px;
 	width: 140px;
 	height: 40px;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 	border: 1px solid #000;
 	border-radius: 12px;
 }

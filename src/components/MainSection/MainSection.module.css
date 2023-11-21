@@ -46,6 +46,11 @@
 }
 
 @media (max-width: 1100px) {
+
+	.head_title {
+		margin: 60px;
+	}
+
 	.head {
 		background: #a1e2eb;
 	}

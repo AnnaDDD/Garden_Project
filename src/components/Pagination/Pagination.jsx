@@ -1,6 +1,7 @@
 import styles from './Pagination.module.css';
 
 export const Pagination = ({ currentPage, setCurrentPage, pagesNumber }) => {
+	
 	const numbersPageList = [];
 
 	for (let i = 1; i < pagesNumber + 1; i++) {

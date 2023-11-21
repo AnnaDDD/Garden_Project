@@ -1,7 +1,6 @@
 import React from "react";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import { NavLink } from "react-router-dom";
-// import busket from "./images/busket.svg";
 import logo from "./images/logo.svg";
 import styles from "./Header.module.css";
 import { HashLink } from "react-router-hash-link";
@@ -42,7 +41,6 @@ function Header() {
             </li>
           </ul>
           <NavLink className={styles.busket} to="/cart">
-            {/* <img src={busket} alt="busket" /> */}
             <svg
               width="30"
               height="30"

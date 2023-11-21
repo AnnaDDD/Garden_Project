@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import {useForm} from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { removeAllProductsFromCart } from '../../store/cartSlice';
 import styles from './Order.module.css';
-import { IoMdClose } from 'react-icons/io';
 import { fetchGetOrder } from '../../asyncActions/order';
 import { Button } from '../UI/Button/Button';
 import { Input } from '../UI/Input/Input';
@@ -73,23 +72,6 @@ const Order = ({ totalSumm }) => {
         unmountOnExit
       >
 		<Alert ref={oferRef} setShowMessage={setShowMessage} cleanCart={cleanCart} showMessage={showMessage}/>
-        {/* <div
-          className={`${styles.allert_wrapper} ${styles[showMessage ? 'active' : null]}`}
-          ref={oferRef}
-          style={{
-            // top: window.scrollY,
-            height: '100vh',
-          }}
-        >
-          <div className={styles.alert}>
-            <IoMdClose
-              className={styles.close_btn}
-              onClick={() => setShowMessage(false)}
-            />
-            <p className={styles.alert_message}>Finish order and clean cart</p>
-            <Button text="Finish" content="order" onClick={cleanCart} />
-          </div>
-        </div> */}
       </CSSTransition>
     </div>
   );

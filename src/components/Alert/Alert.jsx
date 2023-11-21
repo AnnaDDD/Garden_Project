@@ -5,14 +5,8 @@ import styles from './Alert.module.css';
 
 const Alert = forwardRef(({showMessage, setShowMessage, cleanCart, context}, ref) => {
 
-    // console.log(showMessage);
+
     useEffect(() => {
-        //  if (context === "coupon"){
-        //   const verticalScrollPosition = window.scrollY;
-        //   window.scrollTo(verticalScrollPosition, 0);
-        //  } else {
-        //   window.scrollTo(0, 0);
-        //  }
             window.scrollTo(0, 0);
             const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
             document.documentElement.style.paddingRight = `${scrollbarWidth}px`;
@@ -22,8 +16,6 @@ const Alert = forwardRef(({showMessage, setShowMessage, cleanCart, context}, ref
               document.documentElement.style.paddingRight = '';
               document.body.style.overflow = 'auto';
             };
-       
-    
       }, []);
 
   return (
@@ -31,7 +23,6 @@ const Alert = forwardRef(({showMessage, setShowMessage, cleanCart, context}, ref
     className={`${styles.allert_wrapper} ${styles[showMessage ? 'active' : null]}`}
     ref={ref}
     style={{
-      // top: window.scrollY,
       height: '100vh',
     }}
   >
@@ -42,7 +33,7 @@ const Alert = forwardRef(({showMessage, setShowMessage, cleanCart, context}, ref
       />
       <p className={styles.alert_message}>{
        context==="coupon" ? 
-        `Number` :
+        `A code has been sent to you via SMS` :
       `Finish order and clean cart`
       }</p>
 

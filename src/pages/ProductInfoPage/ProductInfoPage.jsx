@@ -14,6 +14,7 @@ function ProductInfoPage() {
 	const navigate = useNavigate();
 
 	const productInfo = useSelector((store) => store.productInfo);
+	
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
